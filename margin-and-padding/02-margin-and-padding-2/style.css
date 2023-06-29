@@ -1,3 +1,4 @@
+/* decides the entire card's dimensions */
 body {
   background: #eee;
   font-family: sans-serif;
@@ -6,22 +7,41 @@ body {
 .card {
   width: 400px;
   background: #fff;
-  margin: 16px auto;
+/* makes the entire card centered */
+  margin: 5px auto; 
+}
+
+.title,
+.content,
+.button-container {
+  padding: 10px;
 }
 
 .title {
   background: #e3f4ff;
+  border: 5px solid white;
+  margin-bottom: 0;
+  font-size: 16px;
 }
 
 .content {
   background: #e3f4ff;
+  border: 5px solid white;
+  margin-bottom: 0;
 }
 
 .button-container {
   background: #e3f4ff;
+  border: 5px solid white;
+  text-align: center;
 }
 
 button {
+  display: block;
   background: white;
   border: 1px solid #eee;
+  /* makes button bigger */
+  padding: 10px;
+  /* centers the button */
+  margin: auto;
 }
