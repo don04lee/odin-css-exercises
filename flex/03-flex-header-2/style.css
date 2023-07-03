@@ -12,6 +12,16 @@ body {
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
+
+  /* change display to flex, 
+  centers items with align-items vertically,
+  makes the logo and button not stick to the sides with padding,
+  makes space between pfp and notif.
+   */
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  gap: 15px;
 }
 
 .profile-image {
@@ -35,6 +45,9 @@ button {
   background: rebeccapurple;
   color: white;
   padding: 8px 24px;
+
+  /* makes the buttons go to the left */
+  margin-left: auto;
 }
 
 a {
@@ -45,4 +58,18 @@ a {
 
 ul {
   list-style-type: none;
+
+  /* set links to be placed horizontally from each other,
+  set gap to 15 between links*/
+  display: flex;
+  gap: 15px;
+
+  margin: 0;
+
+  /* this is what makes logo and link-one be closer together */
+  padding: 0;
+}
+
+.profile-image {
+  flex-shrink: 0;
 }
