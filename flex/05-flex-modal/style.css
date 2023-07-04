@@ -20,6 +20,12 @@ body {
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+
+  /* Padding between edges of window and text,
+  flex so that the icon and title can be side-by-side */
+  padding: 15px;
+  display: flex;
+  gap: 15px;
 }
 
 .icon {
@@ -33,6 +39,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  flex-shrink: 0;
 }
 
 .close-button {
@@ -66,4 +74,23 @@ button.cancel {
   background: white;
   border: 1px solid #ddd;
   color: royalblue;
+}
+
+.header {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.text {
+  max-width: 450px;
+  margin-bottom: 15px;
+}
+
+/* make the close button and the title on opposite sides,
+flex so that the button and title would be next to each other,
+bottom margin so that they haved breathing room */
+.upper {
+  justify-content: space-between;
+  display: flex;
+  margin-bottom: 15px;
 }
