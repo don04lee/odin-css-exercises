@@ -27,6 +27,14 @@ ul.dropdown-menu li:hover {
 
 .visible {
   display: block;
+  animation: transform 1s;
 }
 
-
+@keyframes transform {
+  from {
+    line-height: 0px;
+  }
+  to {
+    line-height: 50px;
+  }
+}
